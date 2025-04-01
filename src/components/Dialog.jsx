@@ -22,7 +22,7 @@ const Dialog = ({
     if (isOpen) {
       document.addEventListener('keydown', handleKeyDown);
       // Focus the dialog when it opens
-      dialogRef.current?.focus();
+      // dialogRef.current?.focus();
       // Prevent body scrolling when dialog is open
       document.body.style.overflow = 'hidden';
     }
@@ -92,4 +92,4 @@ const Dialog = ({
   );
 };
 
-export default Dialog;
+export default React.memo(Dialog);
